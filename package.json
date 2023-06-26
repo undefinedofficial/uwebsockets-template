@@ -8,7 +8,7 @@
     "build": "tsc",
     "postman-route": "yarn build && node dist/postman.js",
     "watch": "nodemon --exec yarn serve",
-    "serve": "set APP_IS_DEV=yes && yarn build && node dist/index.js",
+    "serve": "set RELEASE=yes && yarn build && node dist/index.js",
     "compile": "ncc build ./dist/index.js -o ./build -C",
     "binary": "pkg --build package.json",
     "setup": "yarn"
